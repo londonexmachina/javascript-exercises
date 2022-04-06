@@ -12,5 +12,15 @@ const leapYears = function(num) {
     }
 };
 
-// Do not edit below this line
-module.exports = leapYears;
+
+const leapYears = function(num) {
+    if (num % 4 == false) {
+        if (num % 100 == false && num % 400 != false) {
+            return false;
+        } else {
+            return true;
+        }
+    } else {
+        return false;
+    }
+};
